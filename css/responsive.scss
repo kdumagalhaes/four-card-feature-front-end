@@ -1,0 +1,51 @@
+@media (max-width: 1160px) {
+    .wrapper {
+        #card-feature {
+            .container {
+                .card {
+                    height: auto;
+
+                    span,
+                    img {
+                        align-self: center;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .wrapper {
+        #card-feature {
+            .container {
+                flex-direction: column;
+
+                .card {
+                    margin: 0 auto 30px;
+                }
+
+                .sec1,
+                .sec3 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        #card-feature {
+            header {
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
