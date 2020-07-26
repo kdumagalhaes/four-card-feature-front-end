@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 $primary-red: hsl(0, 78%, 62%);
 $primary-cyan: hsl(180, 62%, 55%);
@@ -17,7 +17,8 @@ $very-light-gray: hsl(0, 0%, 98%);
 
 body {
     font-size: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
+    background-color: $very-light-gray;
 }
 
 @mixin top-border($color) {
@@ -27,7 +28,6 @@ body {
 .wrapper {
     height: 100vh;
     margin: 0 30px 0 30px;
-
 
     #card-feature {
         width: 100%;
@@ -58,9 +58,9 @@ body {
 
         .container {
             display: flex;
-            justify-content: space-between; 
-            width: 100%;        
-            margin-bottom: 60px;  
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 60px;
 
             .sec1 {
                 margin: 0 30px 0 40px;
@@ -70,7 +70,8 @@ body {
                 margin: 0 40px 0 30px;
             }
 
-            .sec1, .sec3 {
+            .sec1,
+            .sec3 {
                 display: flex;
                 align-items: center;
             }
@@ -84,8 +85,18 @@ body {
                 margin-bottom: 30px;
                 display: flex;
                 flex-direction: column;
-                box-shadow: 0px 29px 80px -50px rgba(90,143,166,1);
-                
+                box-shadow: 0px 29px 80px -50px rgba(90, 143, 166, 1);
+                animation: loading 1s linear;
+
+                @keyframes loading {
+                    0% {
+                        box-shadow: none;
+                    }
+                    100% {
+                        box-shadow: 0px 29px 80px -50px rgba(90, 143, 166, 1);
+                    }
+                }
+
                 span {
                     font-weight: 600;
                     color: $very-dark-blue;
@@ -106,21 +117,20 @@ body {
             }
 
             .supervisor {
-                @include top-border($primary-cyan)
+                @include top-border($primary-cyan);
             }
 
             .team-builder {
-                @include top-border($primary-red)
+                @include top-border($primary-red);
             }
 
             .karma {
-                @include top-border($primary-orange)
+                @include top-border($primary-orange);
             }
 
             .calculator {
-                @include top-border($primary-blue)
+                @include top-border($primary-blue);
             }
-
         }
     }
 }
