@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  margin: 0 30px 0 30px;
+}
+
+.wrapper #card-feature {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper #card-feature header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 70px;
+  color: #4c4e61;
+  margin-bottom: 50px;
+}
+
+.wrapper #card-feature header span {
+  font-size: 2.7rem;
+  font-weight: 200;
+}
+
+.wrapper #card-feature header p {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #a3a5ae;
+  margin-top: 20px;
+}
+
+.wrapper #card-feature .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.wrapper #card-feature .container .sec1 {
+  margin: 0 30px 0 40px;
+}
+
+.wrapper #card-feature .container .sec3 {
+  margin: 0 40px 0 30px;
+}
+
+.wrapper #card-feature .container .sec1, .wrapper #card-feature .container .sec3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper #card-feature .container .card {
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
+  border-radius: 7px;
+  padding: 30px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 29px 80px -50px #5a8fa6;
+          box-shadow: 0px 29px 80px -50px #5a8fa6;
+}
+
+.wrapper #card-feature .container .card span {
+  font-weight: 600;
+  color: #4c4e61;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.wrapper #card-feature .container .card p {
+  color: #a3a5ae;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.wrapper #card-feature .container .card img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.wrapper #card-feature .container .supervisor {
+  border-top: 5px solid #45d3d3;
+}
+
+.wrapper #card-feature .container .team-builder {
+  border-top: 5px solid #ea5353;
+}
+
+.wrapper #card-feature .container .karma {
+  border-top: 5px solid #fcaf4a;
+}
+
+.wrapper #card-feature .container .calculator {
+  border-top: 5px solid #549ef2;
+}
+/*# sourceMappingURL=main.css.map */
